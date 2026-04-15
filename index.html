@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Profile</title>
+    <style>
+        /* Modern CSS Reset & Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
+        .profile-card {
+            background: white;
+            width: 90%;
+            max-width: 400px;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #007bff;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            margin: 10px 0;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        .tagline {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio {
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            transition: transform 0.2s, background 0.3s;
+            font-weight: bold;
+        }
+
+        .btn-github {
+            background-color: #333;
+            color: white;
+        }
+
+        .btn-github:hover {
+            background-color: #000;
+            transform: translateY(-2px);
+        }
+
+        .btn-contact {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-contact:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+        
+        <h1>Your Name</h1>
+        <p class="tagline">AI Researcher & Developer</p>
+        
+        <p class="bio">
+            Passionate about building efficient neural networks and deep learning models. 
+            Currently working on optimized U-Net architectures for medical imaging.
+        </p>
+
+        <div class="links">
+            <a href="https://github.com/yourusername" class="btn btn-github">View My GitHub</a>
+            <a href="mailto:yourname@example.com" class="btn btn-contact">Get In Touch</a>
+        </div>
+    </div>
+
+</body>
+</html>
